@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :incognito_backend, IncognitoBackend.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "incognito",
+  password: "incognito",
   database: "incognito_backend_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

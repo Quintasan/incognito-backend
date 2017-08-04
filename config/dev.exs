@@ -53,6 +53,6 @@ config :incognito_backend, IncognitoBackend.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "incognito",
   password: "incognito",
-  database: "incognito",
+  database: "incognito_backend_dev",
   hostname: "localhost",
   pool_size: 10
