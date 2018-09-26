@@ -1,0 +1,11 @@
+pl:
+  activerecord:
+    models:
+      cocktail: "Koktajl"
+    attributes:
+      cocktail:
+        name: "Nazwa"
+        ingredients: "Składniki"
+        glassware: "Szkło"
+        technique: "Technika barmańska"
+        signature: "Koktajl autorski"

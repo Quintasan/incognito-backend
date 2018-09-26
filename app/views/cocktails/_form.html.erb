@@ -1,0 +1,43 @@
+<%= form_with(model: cocktail, local: true) do |form| %>
+  <% if cocktail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cocktail.errors.count, "error") %> prohibited this cocktail from being saved:</h2>
+
+      <ul>
+      <% cocktail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :ingredients %>
+    <%= form.text_area :ingredients %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :glassware %>
+    <%= form.text_field :glassware %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :technique %>
+    <%= form.text_area :technique %>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <%= form.check_box :signature %> <%= form.label :signature %>
+    </label>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cocktails</h1>
+
+<table class="table table-hover table-striped table-responsive">
+  <thead>
+    <tr>
+      <th><%= Cocktail.human_attribute_name(:name) %></th>
+      <th><%= Cocktail.human_attribute_name(:ingredients) %></th>
+      <th><%= Cocktail.human_attribute_name(:glassware) %></th>
+      <th><%= Cocktail.human_attribute_name(:technique) %></th>
+      <th><%= Cocktail.human_attribute_name(:signature) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cocktails.each do |cocktail| %>
+      <tr>
+        <td><%= cocktail.name %></td>
+        <td><%= cocktail.ingredients %></td>
+        <td><%= cocktail.glassware %></td>
+        <td><%= cocktail.technique %></td>
+        <td><%= cocktail.signature %></td>
+        <td><%= link_to 'Show', cocktail %></td>
+        <td><%= link_to 'Edit', edit_cocktail_path(cocktail) %></td>
+        <td><%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cocktail', new_cocktail_path %>

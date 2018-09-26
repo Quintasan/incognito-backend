@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cocktail.name %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @cocktail.ingredients %>
+</p>
+
+<p>
+  <strong>Glassware:</strong>
+  <%= @cocktail.glassware %>
+</p>
+
+<p>
+  <strong>Technique:</strong>
+  <%= @cocktail.technique %>
+</p>
+
+<p>
+  <strong>Signature:</strong>
+  <%= @cocktail.signature %>
+</p>
+
+<%= link_to 'Edit', edit_cocktail_path(@cocktail) %> |
+<%= link_to 'Back', cocktails_path %>

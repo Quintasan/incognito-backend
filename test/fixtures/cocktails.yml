@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ingredients: MyText
+  glassware: MyString
+  technique: MyText
+  signature: false
+
+two:
+  name: MyString
+  ingredients: MyText
+  glassware: MyString
+  technique: MyText
+  signature: false
