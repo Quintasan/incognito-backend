@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2018_09_26_174926) do
   create_table "cocktails", force: :cascade do |t|
     t.string "name"
     t.text "ingredients"
+    t.string "garnish"
     t.string "glassware"
     t.text "technique"
     t.boolean "signature"
