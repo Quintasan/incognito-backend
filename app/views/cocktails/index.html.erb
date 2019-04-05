@@ -7,6 +7,7 @@
     <tr>
       <th><%= Cocktail.human_attribute_name(:name) %></th>
       <th><%= Cocktail.human_attribute_name(:ingredients) %></th>
+      <th><%= Cocktail.human_attribute_name(:garnish) %></th>
       <th><%= Cocktail.human_attribute_name(:glassware) %></th>
       <th><%= Cocktail.human_attribute_name(:technique) %></th>
       <th><%= Cocktail.human_attribute_name(:signature) %></th>
@@ -19,6 +20,7 @@
       <tr>
         <td><%= cocktail.name %></td>
         <td><%= cocktail.ingredients %></td>
+        <td><%= cocktail.garnish %></td>
         <td><%= cocktail.glassware %></td>
         <td><%= cocktail.technique %></td>
         <td><%= cocktail.signature %></td>

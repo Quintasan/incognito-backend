@@ -7,5 +7,6 @@ pl:
         name: "Nazwa"
         ingredients: "Składniki"
         glassware: "Szkło"
+        garnish: "Garnish"
         technique: "Technika barmańska"
         signature: "Koktajl autorski"
